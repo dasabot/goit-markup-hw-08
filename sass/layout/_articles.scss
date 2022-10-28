@@ -1,0 +1,60 @@
+.priorities-articles {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+    &__item {
+        margin-left: 30px;
+
+        @media screen and (max-width:480px) { 
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &:not(:last-child) {
+            @media screen and (max-width:480px) { 
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__item-header {
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+
+        @media screen and (max-width:480px) {
+            text-align: center;
+        }
+    }
+
+    &__item-text {
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $gray;
+    }
+
+    &__icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: $light-gray-2;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        width: 270px;
+        height: 120px;
+
+        @media screen and (max-width:480px) {
+            max-width: 450px;
+            width: 100%;
+            
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

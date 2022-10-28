@@ -1,0 +1,57 @@
+.header {
+    width: 100%;
+    border-bottom: 1px solid $lighest-gray;
+
+    @media screen and (min-width: $tablet){
+        height: 80px;
+    }
+
+    @media screen and (min-width: $desktop){
+        height: 80px;
+    }
+
+
+    .logo {
+        margin-right: 93px;
+    }
+
+    &__mobile-menu-btn {
+        background-color: transparent;
+        border: 0;
+        margin-left: auto;
+        display: block;
+        padding: 0;
+
+        @media screen and (min-width: $tablet){
+            display: none;
+        }
+
+        @media screen and (min-width: $desktop) {
+            display: none;
+        }
+    }
+
+    .navbar__list {
+        display: none;
+
+        @media screen and (min-width: $tablet) {
+            display: flex;
+        }
+
+        @media screen and (min-width: $desktop) {
+            display: flex;
+        }
+    }
+
+    .contacts {
+        display: none;
+
+        @media screen and (min-width: $tablet) {
+            display: flex;
+        }
+
+        @media screen and (min-width: $desktop) {
+            display: flex;
+        }
+    }
+}

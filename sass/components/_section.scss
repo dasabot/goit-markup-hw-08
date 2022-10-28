@@ -1,0 +1,27 @@
+.section {
+    padding: 60px 0;
+
+    @media screen and (min-width: $tablet) {
+        padding: 94px 0 94px 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 94px 0 94px 0;
+    }
+
+    &_priorities {
+        padding-bottom: 60px;
+
+        @media screen and (max-width: $desktop) {
+            padding-bottom: 0;
+        }
+    }
+
+    &_images {
+        display: none;
+
+        @media screen and (min-width:$desktop) {
+            display: block;
+        }
+    }
+}

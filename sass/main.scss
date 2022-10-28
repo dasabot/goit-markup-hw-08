@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@import './utils/vars';
+@import './utils/reset';
+@import './utils/hidden';
+@import './utils/body-setting';
+
+@import './layout/hero';
+@import './layout/modal-agreement';
+@import './layout/clients';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/images-list';
+@import './layout/location';
+@import './layout/modal';
+@import './layout/articles';
+@import './layout/portfolio';
+@import './layout/team';
+@import './layout/mobile-menu.scss';
+
+@import './components/button';
+@import './components/navbar';
+@import './components/logo';
+@import './components/contacts';
+@import './components/filters';
+@import './components/second-header';
+@import './components/social-networks';
+@import './components/backdrop';
+@import './components/modal-form';
+@import './components/section';
+@import './components/container';
+@import './components/checkbox';

@@ -1,0 +1,24 @@
+.checkbox-icon {
+    margin-right: 7px;
+}
+
+.checkbox-icon_check {
+    opacity: 0;
+    transition: opacity $transition;
+}
+
+.checkbox:checked+.checkbox-icon .checkbox-icon_uncheck {
+    opacity: 0;
+    transition: opacity $transition;
+}
+
+.checkbox:checked+.checkbox-icon .checkbox-icon_check {
+    opacity: 1;
+    transition: opacity $transition;
+}
+
+.checkbox:hover+.checkbox-icon .checkbox-icon_uncheck,
+.checkbox:focus+.checkbox-icon .checkbox-icon_uncheck {
+    fill: $dark-blue;
+    transition: fill $transition;
+}

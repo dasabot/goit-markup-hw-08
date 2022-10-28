@@ -1,0 +1,45 @@
+.hero {
+    background: linear-gradient(to right,
+            $overlay-gradient,
+            $overlay-gradient),
+        url('../images/Img_17.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $dark-gray;
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    &__header {
+        color: $white;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @media screen and (max-width:480px) {
+            font-size: 26px;
+            line-height: 1.6;
+        }
+    }
+
+    &__button {
+        padding: 10px 32px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: .06em;
+    }
+
+    @media screen and (max-width:480px) {
+        max-width: 480px;
+        padding: 118px 0;
+    }
+}
