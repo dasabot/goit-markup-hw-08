@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.16;
 
     &__text {
         line-height: 1.7;
@@ -11,8 +12,9 @@
         user-select: none;
         font-size: 12px;
 
-        @media screen and (max-width: $desktop) {
+        @media screen and (min-width: $desktop) {
             font-size: 14px;
+            line-height: 1.7;
         }
     }
 

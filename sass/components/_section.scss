@@ -12,7 +12,7 @@
     &_priorities {
         padding-bottom: 60px;
 
-        @media screen and (max-width: $desktop) {
+        @media screen and (min-width: $desktop) {
             padding-bottom: 0;
         }
     }
