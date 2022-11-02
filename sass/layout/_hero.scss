@@ -14,6 +14,57 @@
     max-width: 1600px;
     margin: 0 auto;
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+                $overlay-gradient,
+                $overlay-gradient),
+            url(../images/hero-bg-2x-mobile.jpg);
+        ;
+    }
+
+
+    @media screen and (min-width:480px) {
+        background-image: linear-gradient(to right,
+                $overlay-gradient,
+                $overlay-gradient),
+            url(../images/tablet-promo-bg.jpg);
+        max-width: 768px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    $overlay-gradient,
+                    $overlay-gradient),
+                url(../images/hero-bg-2x-tablet.jpg);
+
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(to right,
+                $overlay-gradient,
+                $overlay-gradient), url(../images/promo-img-bg.jpg);
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        padding-left: 0;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    $overlay-gradient,
+                    $overlay-gradient),
+                url(../images/hero-bg-2x-desktop.jpg);
+
+        }
+
+    }
+
     &__header {
         color: $white;
         font-weight: 900;
