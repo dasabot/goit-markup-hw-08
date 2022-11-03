@@ -52,7 +52,7 @@
             justify-content: space-around;
             flex-direction: row;
             flex-wrap: wrap;
-            align-items: flex-start;
+            align-items: baseline;
         }
 
         @media screen and (min-width: $desktop) {
